@@ -1,0 +1,133 @@
+.landing-container {
+  height: 100vh;
+  width: 100%;
+  background: url("../assets/background.jpg") no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.landing-nav {
+  background-color: #002855;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.landing-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.4); 
+}
+
+.landing-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.landing-content p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  max-width: 600px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 20px;
+}
+
+.landing-btn {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.register-btn:hover {
+  background-color: #0056b3;
+}
+
+.login-btn {
+  background-color: white;
+  color: #007bff;
+}
+
+.login-btn:hover {
+  background-color: #f1f1f1;
+}
+@media (min-width: 1200px) {
+  .landing-content h1 {
+    font-size: 4rem;
+  }
+  .landing-content p {
+    font-size: 1.5rem;
+    max-width: 800px;
+  }
+  .landing-btn {
+    font-size: 1.3rem;
+    padding: 14px 40px;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+  .landing-content h1 {
+    font-size: 3.5rem;
+  }
+  .landing-content p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .landing-content h1 {
+    font-size: 2.5rem;
+  }
+  .landing-content p {
+    font-size: 1.1rem;
+    padding: 0 20px;
+  }
+  .landing-btn {
+    font-size: 1rem;
+    padding: 10px 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .landing-nav {
+    font-size: 1.2rem;
+    padding: 15px;
+  }
+  .landing-content h1 {
+    font-size: 1.8rem;
+  }
+  .landing-content p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    padding: 0 15px;
+  }
+  .btn-group {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .landing-btn {
+    width: 100%;
+    max-width: 250px;
+    font-size: 1rem;
+  }
+}
