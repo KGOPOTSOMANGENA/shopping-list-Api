@@ -59,7 +59,18 @@ Responsive and simple interface
 
 Connects to backend API automatically
 
+## 🧪 Sprint 6 – Testing & Documentation
+All **Items** endpoints were tested locally with **Postman** on `http://localhost:5000`.
+
+|**GET**  | `/items`       | { "id": 1, "name": "Milk", "category": "Dairy", "quantity": 2,"dateAdded": "2025-09-06T18:00:00.000Z" } 
+|**GET**  | `/items/:id` |{ "id": 1, "name": "Milk", "category": "Dairy", "quantity": 2}
+|**POST** | `/items`     |{ "name": "Bread", "category": "Bakery", "quantity": 1 },{ "id": 2, "name": "Bread", "category": "Bakery", "quantity": 1, "dateAdded": "2025-09-06T18:05:00.000Z" }`
+|**PUT**  | `/items/:id` |`{ "quantity": 3, "purchased": true }`{ "id": 1, "name": "Milk", "quantity": 3,"category": "Dairy", "dateAdded": "2025-09-06T18:00:00.000Z" }'
+|**DELETE**| `/items/:id`
+
+
 🛠️ Technologies Used
+
 
 Backend: Node.js, Express, TypeScript, ts-node, nodemon, body-parser, cors
 
